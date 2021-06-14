@@ -1,0 +1,115 @@
+.chartsView {
+  position: fixed;
+  right: 30px;
+  bottom: 0;
+  left: 30px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  overflow: hidden;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  .titleView {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    background-color: #f6f6f6;
+    .titleItems {
+      flex: 1;
+      color: #333;
+    }
+    .title {
+      flex: 3;
+      color: #000;
+      font-weight: 500;
+      font-size: 34px;
+      text-align: center;
+    }
+  }
+  .contentView {
+    position: relative;
+    flex: 1;
+    height: 0;
+    padding: 0 30px;
+    overflow: scroll;
+    .otherCell {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 20px;
+      .chartContent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        div {
+          max-width: 70vw;
+          padding: 10px 30px;
+          color: #333;
+          white-space: normal;
+          text-align: right;
+          word-break: break-all;
+          background-color: rgba(68, 119, 238, 0.4);
+          border-radius: 5px;
+        }
+      }
+      .userName {
+        padding-bottom: 10px;
+        color: #666;
+        font-size: 28px;
+        text-align: left;
+      }
+    }
+    .meCell {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      .chartContent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        div {
+          max-width: 70vw;
+          padding: 10px 30px;
+          color: #333;
+          white-space: normal;
+          text-align: right;
+          word-break: break-all;
+          background-color: rgba(68, 119, 238, 0.4);
+          border-radius: 5px;
+        }
+      }
+      .userName {
+        padding-bottom: 10px;
+        color: #666;
+        font-size: 28px;
+        text-align: right;
+      }
+    }
+  }
+  .footer {
+    height: 120px;
+    padding: 20px 30px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #f6f6f6;
+    .textArea {
+      width: 100%;
+      height: 100%;
+      font-size: 30px;
+      border: none;
+      border-radius: 3px;
+      outline: none;
+    }
+  }
+  &.hidden {
+    display: none;
+  }
+}

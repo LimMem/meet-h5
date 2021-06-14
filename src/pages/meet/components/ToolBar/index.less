@@ -1,0 +1,58 @@
+.toolBar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 120px;
+  background-color: #000;
+  transition: all 0.2s ease-out;
+
+  &.hidden {
+    transform: translateY(100%);
+  }
+
+  .toolItem {
+    flex: 1;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.moreView {
+  position: fixed;
+  right: 20px;
+  bottom: 140px;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 340px;
+  padding: 20px 30px 0;
+  color: #fff;
+  background-color: #000;
+  border-radius: 20px;
+  .moreItem {
+    display: flex;
+    flex-basis: 33.333%;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+    div {
+      margin-top: 6px;
+      margin-bottom: 20px;
+    }
+  }
+}

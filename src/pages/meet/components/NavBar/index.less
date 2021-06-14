@@ -1,0 +1,61 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 88px;
+  padding: 0 30px;
+  color: #8e8e93;
+  font-size: 28px;
+  background-color: #000;
+  transition: all 0.2s ease-out;
+  .leftItems {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    img {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+  }
+  .rightItems {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .titleView {
+    flex: 3;
+    text-align: center;
+    .titleViewHeader {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin-right: 6px;
+      }
+      img {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+}
+
+&.hidden {
+  transform: translateY(-100%);
+}
